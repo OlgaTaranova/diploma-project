@@ -1,0 +1,21 @@
+nav {
+    background: $p-color;
+    height: 40px;
+    width: 50%;
+    margin: 0 auto;
+    ul {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+        
+        li {
+            color: white;
+            &:hover {
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+    }
+}

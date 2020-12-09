@@ -1,5 +1,20 @@
+@import 'components/reset.scss';
+@import 'components/variables.scss';
+@import 'mixins.scss';
+@import 'components/nav.scss';
+
+
 p {
-    font-style: italic;
-    color: rgb(35, 8, 85);
-    font-size: 30px;
+    font: $p-font;
+    background: $p-bg-color;
+    color: $p-color;
+}
+.reset {
+    @include btn (250px, 50px);
+}
+.delete {
+    @include btn (150px, 35px);
+}
+.buy {
+    @include btn (100%, 50px);
 }
