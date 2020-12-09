@@ -1,6 +1,7 @@
 @import 'components/reset.scss';
 @import 'components/variables.scss';
 @import 'mixins.scss';
+@import 'extands.scss';
 @import 'components/nav.scss';
 
 
@@ -17,4 +18,9 @@ p {
 }
 .buy {
     @include btn (100%, 50px);
+    
+}
+.hey {
+    @extend %message-shared;
+    width: 600px + 60px;
 }
