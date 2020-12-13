@@ -5,7 +5,7 @@ const gulp         = require('gulp'),
     imagemin     = require('gulp-imagemin'),
     autoprefixer = require('gulp-autoprefixer'),
     csso         = require('gulp-csso'),
-    pug          = require('gulp-pug'),
+    // pug          = require('gulp-pug'),
     data         = require('gulp-data'),
     htmlmin      = require('gulp-htmlmin'),
     uglify       = require('gulp-uglify'),
@@ -22,9 +22,9 @@ const path = {
         watchSource: './source/styles/**/*.scss',
     },
     html:     {
-        indexSource: './source/pages/*.pug',
+        indexSource: './source/pages/*.html',
         dest:        './build/styles/',
-        watchSource: './source/pages/**/*.pug',
+        watchSource: './source/pages/**/*.html',
     },
     scripts:  {
         source:      './source/js/**/*',
@@ -69,7 +69,7 @@ function requireUncached($module) {
 gulp.task('html', done => {
     gulp
         .src(path.html.indexSource)
-        .pipe(pug())
+        // .pipe(pug())
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(path.build))
         .pipe(browsersync.stream());

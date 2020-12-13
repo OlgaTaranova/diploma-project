@@ -1,26 +1,11 @@
-@import 'components/reset.scss';
-@import 'components/variables.scss';
-@import 'mixins.scss';
-@import 'extands.scss';
-@import 'components/nav.scss';
+@import './components/fonts.scss';
+@import './general.scss';
+@import './components/components.scss';
 
 
-p {
-    font: $p-font;
-    background: $p-bg-color;
-    color: $p-color;
-}
-.reset {
-    @include btn (250px, 50px);
-}
-.delete {
-    @include btn (150px, 35px);
-}
-.buy {
-    @include btn (100%, 50px);
-    
-}
-.hey {
-    @extend %message-shared;
-    width: 600px + 60px;
-}
+@import './sections/header.scss';
+
+
+@import './media/media\(max-width-1110px\).scss';
+@import './media/media\(max-width-768px\).scss';
+@import './media/media\(max-width-580px\).scss';
