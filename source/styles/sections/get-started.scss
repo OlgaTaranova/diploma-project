@@ -1,0 +1,35 @@
+.get-started {
+    padding: $content-padding;
+    padding-top: 12.7rem;
+}
+.get-started__contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+.get-started__title {
+    font: 500 5rem "Rubik", sans-serif;
+    margin-bottom: 2rem;
+}
+.get-started__info {
+    margin-bottom: 5rem;
+
+    font: 400 1.6rem "Rubik", sans-serif;
+    line-height: 3rem;
+
+    color: #4F5665;
+}
+.get-started__btn {
+    @include red-btn;
+}
+.get-started__img {
+    width: 50%;
+    height: 31.68%;
+}
+.achievements {
+    display: flex;
+    justify-content: space-between;
+}
+.achievements__item {
+    background: url(../../img/achievements.png) no-repeat;
+}
