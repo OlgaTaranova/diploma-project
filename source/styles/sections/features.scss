@@ -1,0 +1,23 @@
+.features {
+    padding: $content-padding;
+    padding-top: 9.5rem;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+.features__content {
+    padding-top: 9.5rem;
+}
+.features__title {
+    font: $title-md;
+    margin-bottom: 2rem;
+}
+.features__info {
+    font: $paragraph-md;
+    margin-bottom: 2rem;
+}
+.features__item {
+    font: $paragraph-sm;
+    margin-bottom: 1.5rem;
+}
