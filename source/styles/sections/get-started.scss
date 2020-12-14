@@ -27,9 +27,34 @@
     height: 31.68%;
 }
 .achievements {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3.72rem 0;
+    margin-bottom: 9.5rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 22px -4px #c5bebe;
 }
 .achievements__item {
-    background: url(../../img/achievements.png) no-repeat;
+ 
+    border-right: 2px solid #EEEFF2;
+    padding:6rem 13.4rem 6rem 9.15rem;
+   
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    &:last-of-type {
+        border: none;
+    }
+}
+.achievements__icon {
+    padding-right: 3.65rem;
+}
+.achievements__num {
+    margin-bottom: 0.5rem;
+    font: 700 2.5rem "Rubik", sans-serif;
+}
+.achievements__name {
+    font: 400 2rem "Rubik", sans-serif;
 }
