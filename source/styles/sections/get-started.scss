@@ -31,7 +31,7 @@
     grid-template-columns: repeat(3, 1fr);
     padding: 3.72rem 0;
     border-radius: 10px;
-    box-shadow: 0px 25px 50px 0px #B5B5B5;
+    box-shadow: 0px 30px 70px 0px #cecece;
 }
 .achievements__item {
  
@@ -50,12 +50,14 @@
 .achievements__icon {
     padding-right: 3.65rem;
 }
-.achievements__num {
-    margin-bottom: 0.5rem;
-    font: 700 2.5rem "Rubik", sans-serif;
-}
 .achievements__name {
     font: 400 2rem "Rubik", sans-serif;
+    color: #4F5665;
+}
+.achievements__name b {
+    margin-bottom: 0.5rem;
+    font: 700 2.5rem "Rubik", sans-serif;
+    color: #0B132A;
 }
 
 @media (max-width: 1110px) {
