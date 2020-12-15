@@ -30,13 +30,8 @@
     font: 400 16px 'Rubik', sans-serif;
   }
   .subscribe__btn {
-    width: 250px;
-    height: 60px;
-    
-    background: #F53838;
-    border-radius: 10px;
-    font: 700 16px 'Rubik', sans-serif;
-    color: white;
+    @include red-btn;
+    box-shadow: 0 8px 54px 0 rgba(245, 56, 56, 0.5);
   }
   .footer__wrapper {
     display: flex;
