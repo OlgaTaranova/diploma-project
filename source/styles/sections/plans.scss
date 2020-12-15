@@ -8,11 +8,13 @@
   }
   .plans__title {
     margin-bottom: 2rem;
-    font: 500 35px 'Rubik', sans-serif;
+    font: $title-md;
+    color: #0B132A;
   }
   .plans__info {
     margin-bottom: 6rem;
-    font: 400 16px 'Rubik', sans-serif;
+    font: $paragraph-md;
+    color: #4F5665;
   }
   .plans__wrapper {
     display: grid;
@@ -27,35 +29,55 @@
     align-items: center;
     width: 100%;
     min-width: 200px;
-    padding-top: 9rem;
+    padding-top: 7.9rem;
     box-sizing: border-box;
     padding-bottom: 5rem;
     
     border: 2px solid #DDDDDD;
     border-radius: 10px;
   }
+  .active-plan {
+    border: 2px solid #F53838;
+
+    .plans__btn {
+      @include transparent-btn;
+      width: 17.7rem;
+      background: #F53838;
+      color: #FFFFFF;
+      &:hover {
+        box-shadow: 0 0 8px 0 #961f1f;
+      }
+    }
+  }
   .plans__img {
     display: block;
-    width: 70%;
+    max-width: 14.5rem;
     height: 165px;
     
     margin-bottom: 3rem;
     
-    background: orange;
   }
   .plans__plan-name {
     margin-bottom: 3rem;
-    font: 500 18px 'Rubik', sans-serif;
+    font: $title-sm;
+    color: #0B132A;
   }
   .plans__services {
     height: 230px;
     margin-bottom: 5rem;
     list-style-type: none;
-    font: 400 14px 'Rubik', sans-serif;
+    
+    font: $paragraph-sm;
+    color: #4F5665;
   }
    .plans__service-item {
-      font: 400 14px 'Rubik', sans-serif;
-      margin-bottom: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 4rem;
+
+    background: url(../../img/tick.png) no-repeat left center;
+    font: $paragraph-sm;
+    line-height: 3rem;
+     
     }
   .plans__price {
     font: 400 25px 'Rubik', sans-serif;
@@ -69,11 +91,8 @@
   
   }
   .plans__btn {
-    width: 177.88px;
-    height: 45px;
-  
-    border: 2px solid #F53838;
-    border-radius: 50px;
+    @include transparent-btn;
+    width: 17.7rem;
   }
   
   
