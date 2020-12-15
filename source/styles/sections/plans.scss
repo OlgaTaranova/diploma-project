@@ -1,0 +1,97 @@
+.plans {
+    padding: 8rem 12% 15rem 15%; 
+    background: #F6F6F6;
+  }
+  .plans__title,
+  .plans__info {
+    text-align: center;
+  }
+  .plans__title {
+    margin-bottom: 2rem;
+    font: 500 35px 'Rubik', sans-serif;
+  }
+  .plans__info {
+    margin-bottom: 6rem;
+    font: 400 16px 'Rubik', sans-serif;
+  }
+  .plans__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5rem;
+   justify-items: center;
+    
+  }
+  .plans__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 200px;
+    padding-top: 9rem;
+    box-sizing: border-box;
+    padding-bottom: 5rem;
+    
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+  }
+  .plans__img {
+    display: block;
+    width: 70%;
+    height: 165px;
+    
+    margin-bottom: 3rem;
+    
+    background: orange;
+  }
+  .plans__plan-name {
+    margin-bottom: 3rem;
+    font: 500 18px 'Rubik', sans-serif;
+  }
+  .plans__services {
+    height: 230px;
+    margin-bottom: 5rem;
+    list-style-type: none;
+    font: 400 14px 'Rubik', sans-serif;
+  }
+   .plans__service-item {
+      font: 400 14px 'Rubik', sans-serif;
+      margin-bottom: 1rem;
+    }
+  .plans__price {
+    font: 400 25px 'Rubik', sans-serif;
+    color: #4F5665;
+    margin-bottom: 2rem;
+  }
+  .plans__price > strong {
+    font: 500 25px 'Rubik', sans-serif;
+    color: #0B132A;
+    
+  
+  }
+  .plans__btn {
+    width: 177.88px;
+    height: 45px;
+  
+    border: 2px solid #F53838;
+    border-radius: 50px;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+   
+    .plans {
+    padding: 5%; 
+  }
+    .plans__wrapper {
+    grid-template-columns: 100%;
+     grid-template-rows: repeat(3, 1fr);
+      grid-row-gap: 2rem;
+    }
+    .plans__item {
+      width: 70%;
+    }
+   
+    
+    
+  }
