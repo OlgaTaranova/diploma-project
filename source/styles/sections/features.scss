@@ -1,6 +1,7 @@
 .features {
     padding: $content-padding;
     padding-top: 9.5rem;
+    padding-bottom: 12.6rem;
 
     display: flex;
     justify-content: space-between;
@@ -10,14 +11,32 @@
     padding-top: 9.5rem;
 }
 .features__title {
-    font: $title-md;
+    max-width: 38.4rem;
     margin-bottom: 2rem;
+
+    font: $title-md;
+    color: #0B132A;
 }
 .features__info {
-    font: $paragraph-md;
     margin-bottom: 2rem;
+    max-width: 42.8rem;
+    font: $paragraph-md;
+    color: #4F5665;
+}
+.features__list {
+    list-style-type: none;
 }
 .features__item {
-    font: $paragraph-sm;
     margin-bottom: 1.5rem;
+
+    background: url(../../img/check.png) center left no-repeat;
+    padding-left: 3.2rem;
+    font: $paragraph-sm;
+    line-height: 30px;
+    color: #4F5665;
+}
+.features__item::before {
+    content: '';
+
+    
 }
