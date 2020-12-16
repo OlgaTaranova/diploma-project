@@ -26,19 +26,28 @@
   }
   .nav__item:hover {
     color: #000;
+    text-decoration: none;
   }
   .authorisation {
       width: 24rem;
   }
   .authorisation__signIN {
+    margin-right: 1rem;
+    padding: 6px;
     font: 500 1.6rem "Rubik", sans-serif;
-    text-decoration: none;
+    
     color: #0B132A;
-    margin-right: 3rem;
+    background: transparent;
+    
+    
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    &:hover {
+      border: 1px solid #0b132a;
+    }
   }
-  .authorisation__signIN:hover {
-    color: #F53838;
-  }
+  
 
   .authorisation__signUP {
     @include transparent-btn;
