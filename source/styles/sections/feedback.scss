@@ -137,6 +137,10 @@
         color: #FFFFFF;
         cursor: pointer;
     }
+    &:focus {
+      outline: none;
+    }
+
   }
   .next {
     background: #F53838;

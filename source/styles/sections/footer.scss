@@ -56,7 +56,7 @@
  .footer__contact-item {
    display: inline-block;
 
-   margin-bottom: 1rem;
+   margin-bottom: 3rem;
    margin-right: 2rem;
    width: 3rem;
    height: 3rem;
@@ -105,16 +105,25 @@
     
     margin: 0 20px;
   }
+  .footer__link-group ul {
+    list-style-type: none;
+  }
+  .footer__link-group li {
+    margin-bottom: 10px;
+
+  }
   .footer__link-title {
     font: 500 18px 'Rubik', sans-serif;
     margin-bottom: 20px;
   }
   .footer__link-item {
-    margin-bottom: 10px;
-    
     text-decoration: none;
     font: 400 16px 'Rubik', sans-serif;
     color: #4F5665;
+    &:hover {
+      color: #000;
+      text-decoration: none;
+    }
   }
   
   
