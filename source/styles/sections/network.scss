@@ -54,14 +54,23 @@
      }
   }
   #map {
-    width: 106rem;
-  height: 53.8rem;
+    width: 110rem;
+  height: 55rem;
     
     margin-bottom: 10rem;
   }
 
+
+  @media (max-width: 1200px) {
+   
+    #map {
+     width: 100%;
+   }
+   }
   @media (max-width: 1110px) {
     .partners__item {
       padding-top: 2rem;
    }
+ 
   }
+ 
