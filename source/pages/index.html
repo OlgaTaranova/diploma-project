@@ -121,7 +121,7 @@
             </div>
           </section>
 
-          <section class="network">
+          <!-- <section class="network">
             <h2 class="network__title">Huge Global Network of Fast VPN</h2>
             <p class="network__info">See <strong>LaslesVPN</strong> everywhere to make it easier for you when you move locations.</p>
           
@@ -129,6 +129,22 @@
              <img class="map__img" src="../img/map.png" alt="MAp" />
             </a>
             
+            <div class="partners">
+              <img class="partners__item" src="../img/netflix.png" alt="Netflix"/>
+              <img class="partners__item" src="../img/reddit.png" alt="Reddit"/>
+              <img class="partners__item" src="../img/amazon.png" alt="Amazon"/>
+              <img class="partners__item" src="../img/discourd.png" alt="Discord"/>
+              <img class="partners__item" src="../img/spotify.png" alt="Spotify"/>
+            </div>
+          
+          </section> -->
+
+          <section class="network">
+            <h2 class="network__title">Huge Global Network of Fast VPN</h2>
+            <p class="network__info">See <strong>LaslesVPN</strong> everywhere to make it easier for you when you move locations.</p>
+                 
+            <div id="map"></div>
+          
             <div class="partners">
               <img class="partners__item" src="../img/netflix.png" alt="Netflix"/>
               <img class="partners__item" src="../img/reddit.png" alt="Reddit"/>
@@ -372,7 +388,286 @@
           </footer>
         </div>
 
+        <script>
+        
+          let map;
+          let styles = [
+          {
+        "featureType": "all",
+        "elementType": "all",
+        "stylers": [
+            
+            {
+                "weight": "0.01"
+            }
+        ]
+    },
+              {
+                  "featureType": "administrative.country",
+                  "elementType": "geometry.stroke",
+                  "stylers": [
+                      {
+                          "visibility": "off"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "administrative.country",
+                  "elementType": "labels",
+                  "stylers": [
+                      {
+                          "visibility": "off"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "administrative.province",
+                  "elementType": "geometry.stroke",
+                  "stylers": [
+                      {
+                          "visibility": "off"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "landscape",
+                  "elementType": "geometry.fill",
+                  "stylers": [
+                      {
+                          "color": "#dde0e4"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "landscape",
+                  "elementType": "labels",
+                  "stylers": [
+                      {
+                          "visibility": "off"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "water",
+                  "elementType": "geometry.fill",
+                  "stylers": [
+                      {
+                          "color": "#f6f6f6"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "water",
+                  "elementType": "labels",
+                  "stylers": [
+                      {
+                          "visibility": "off"
+                      }
+                  ]
+              }
+          ];
+          
+          function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+              center: { lat: 34.40082528239003, lng: 16.99734345732416},
+              zoom: 2,
+              disableDefaultUI: true,
+              
+            });
+            
+             marker = new google.maps.Marker({
+                      position: {lat: 55.617629155073985, lng: -118.88156248797436},
+                      map: map,
+                      icon: './Group 1194.png',
+               animation: google.maps.Animation.DROP
+                  });
+          
+            marker = new google.maps.Marker({
+                      position: {lat: 65.11991396719912, lng: -158.871794233226},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+              marker = new google.maps.Marker({
+                      position: {lat: 68.31136120576849, lng: -130.7467948542736},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+          
+             marker = new google.maps.Marker({
+                      position: {lat: 65.84924510834742, lng: -96.99679559953069},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+              marker = new google.maps.Marker({
+                      position: {lat: 55.24361091860938, lng: -70.62960868176278},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+             
+             marker = new google.maps.Marker({
+                      position: {lat: 34.97896109547272, lng: -83.63742089452825},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+            marker = new google.maps.Marker({
+                      position: {lat: 25.675285154474697, lng: -101.7948847727477},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+            marker = new google.maps.Marker({
+                      position: {lat: 3.6675455194269833, lng: -72.39198262508599},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+            marker = new google.maps.Marker({
+                      position: {lat: -12.231040712131923, lng: -39.73858151628167},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+             marker = new google.maps.Marker({
+                      position: {lat: -41.517273801578874, lng: -68.73398120995354},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+            marker = new google.maps.Marker({
+                      position: {lat: -11.49191088769928, lng: -58.53482619286},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+               marker = new google.maps.Marker({
+                      position: {lat: 82.15418599286265, lng: -78.0462512164574},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+             marker = new google.maps.Marker({
+                      position: {lat: 77.32182275387049, lng: -47.89223199157052},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+            marker = new google.maps.Marker({
+                      position: {lat: 79.14966334280263, lng: -25.792635679000462},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+             
+              marker = new google.maps.Marker({
+                      position: {lat: 65.55545042444581, lng: -45.02434406726646},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+               marker = new google.maps.Marker({
+                      position: {lat: 61.85742064964765, lng: 7.23573514271245},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+          
+             marker = new google.maps.Marker({
+                      position: {lat: 42.228391552306675, lng: 22.913758285320615},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+            marker = new google.maps.Marker({
+                      position: {lat: 14.585615840338296, lng: -4.93466397317531},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+            marker = new google.maps.Marker({
+                      position: {lat: 13.725672248267442, lng: 32.31441859874379},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+            marker = new google.maps.Marker({
+                      position: {lat: -20.568610243978103, lng: 23.445589414953513},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+              marker = new google.maps.Marker({
+                      position: {lat: 60.53354250781821, lng: 58.92090615011457},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+             marker = new google.maps.Marker({
+                      position: {lat: 25.932825757582137, lng: 81.09297910959023},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+             
+            marker = new google.maps.Marker({
+                      position: {lat: 70.53049666952494, lng: 81.49064264011882},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+             
+             marker = new google.maps.Marker({
+                      position: {lat: 60.60028333840539, lng: 97.25604655112262},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+               marker = new google.maps.Marker({
+                      position: {lat: 34.454498312354914, lng: 104.78149765957453},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+             marker = new google.maps.Marker({
+                      position: {lat: 66.02718271201344, lng: 136.3465849919132},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+             marker = new google.maps.Marker({
+                      position: {lat: 65.8567479243026, lng: 172.09247775705967},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+          
+             marker = new google.maps.Marker({
+                      position: {lat: -7.533226028350088, lng: 109.94009876909695},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+            marker = new google.maps.Marker({
+                      position: {lat: -26.33826952947264, lng: 119.44875156329132},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+              marker = new google.maps.Marker({
+                      position: {lat: -34.627487366126324, lng: 147.47752462440957},
+                      map: map,
+               animation: google.maps.Animation.DROP
+                  });
+            
+            
+          map.setOptions({styles: styles});
+          
+           
+          }
+          </script>
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuOFsAMnKRlA9dLQUQhwp2IGF-5mQMMSk&callback=initMap&libraries=&v=weekly"
+            defer
+          ></script>
     </body>
 </html>

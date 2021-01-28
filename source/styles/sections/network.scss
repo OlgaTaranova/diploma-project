@@ -53,6 +53,12 @@
        opacity: 0.5;
      }
   }
+  #map {
+    width: 106rem;
+  height: 53.8rem;
+    
+    margin-bottom: 10rem;
+  }
 
   @media (max-width: 1110px) {
     .partners__item {
