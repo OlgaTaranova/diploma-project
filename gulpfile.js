@@ -14,7 +14,7 @@ const gulp         = require('gulp'),
 
 
 const path = {
-    build:    './build',
+    build:    './build/pages/*.html',
     dataJson: './source/data.json',
     css:      {
         source:      './source/styles/main.+(scss|sass)',
