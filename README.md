@@ -1,1 +1,1 @@
-https://OlgaTaranova.github.io/diploma-project/build/
+https://OlgaTaranova.github.io/diploma-project/build/pages/
